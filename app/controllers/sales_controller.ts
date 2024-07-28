@@ -7,7 +7,11 @@ import { createSaleValidator } from '#validators/sale'
 
 export default class ProductsController {
   async store({ request, response }: HttpContext) {
-    const products = JSON.parse(request.input('products'))
+    const productsPayload = request.input('products')
+    if (!productsPayload)
+      throw new Exception(`Products is required and must be an array.`, { status: 400 })
+    const products = JSON.parse(productsPayload)
+    if (products.length === 0) throw new Exception(`Products is required .`, { status: 400 })
     const customerId = request.input('customerId')
 
     const newSale = await createSaleValidator.validate({ products, customerId })
