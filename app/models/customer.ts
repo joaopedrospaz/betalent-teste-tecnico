@@ -1,0 +1,34 @@
+import { DateTime } from 'luxon'
+import { BaseModel, column, hasMany, hasOne } from '@adonisjs/lucid/orm'
+import type { HasMany, HasOne } from '@adonisjs/lucid/types/relations'
+import Address from './address.js'
+import Sales from './sale.js'
+
+export default class Customer extends BaseModel {
+  @column({ isPrimary: true })
+  declare id: number
+
+  @column()
+  declare name: string
+
+  @column()
+  declare email: string
+
+  @column()
+  declare cpf: string
+
+  @column()
+  declare phone: string
+
+  @column.dateTime({ autoCreate: true })
+  declare createdAt: DateTime
+
+  @column.dateTime({ autoCreate: true, autoUpdate: true })
+  declare updatedAt: DateTime | null
+
+  @hasOne(() => Address)
+  declare adress: HasOne<typeof Address>
+
+  @hasMany(() => Sales)
+  declare sales: HasMany<typeof Sales>
+}
