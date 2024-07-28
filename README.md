@@ -8,21 +8,23 @@ Para rodar o projeto, siga os passos descrito a seguir:
   1. Clone o repositório `git clone git@github.com:joaopedrospaz/betalent-teste-tecnico.git`
   
   2.  Entre na pasta do repositório que você acabou de clonar:
-  * `cd pasta-do-repositório`
+  * Se você estiver usando linux `cd betalent-teste-tecnico`
 
-  3. Instale as dependências:
+  3. Tire o `.exemple` do arquivo `.env.exemple`
+
+  4. Instale as dependências:
   * `npm install`
 
-  4. Suba o container do MySql:
+  5. Suba o container do MySql:
   * `docker-compose up -d`
     
-  5. Execute as Migrations:
+  6. Execute as Migrations:
   * `npm run migration`
 
-  6. Execute as Seeders:
+  7. Execute as Seeders:
   * `npm run seed`
     
-  7. Rode o projeto:
+  8. Rode o projeto:
   * `npm run dev`  
   
 </details>
