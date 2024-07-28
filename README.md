@@ -4,6 +4,7 @@ Para rodar o projeto, siga os passos descrito a seguir:
 
 <details>
 <summary><strong> 🔰 Iniciando o projeto</strong></summary><br />
+  
   1. Clone o repositório `git clone git@github.com:joaopedrospaz/betalent-teste-tecnico.git`
   
   2.  Entre na pasta do repositório que você acabou de clonar:
