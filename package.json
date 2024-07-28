@@ -12,7 +12,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit",
-    "seed": "node ace db:seed --files './database/seeders/user_seeder.ts' && node ace db:seed --files './database/seeders/customer_seeder.ts' && node ace db:seed --files './database/seeders/address_seeder.ts' && node ace db:seed --files './database/seeders/product_seeder.ts' && node ace db:seed --files './database/seeders/sale_seeder.ts' && node ace db:seed --files './database/seeders/procuct_sales_seeder.ts'"
+    "seed": "node ace db:seed --files './database/seeders/user_seeder.ts' && node ace db:seed --files './database/seeders/customer_seeder.ts' && node ace db:seed --files './database/seeders/address_seeder.ts' && node ace db:seed --files './database/seeders/product_seeder.ts' && node ace db:seed --files './database/seeders/sale_seeder.ts' && node ace db:seed --files './database/seeders/procuct_sales_seeder.ts'",
+    "migration": "node ace migration:run"
   },
   "imports": {
     "#controllers/*": "./app/controllers/*.js",
