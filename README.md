@@ -13,6 +13,7 @@ Para rodar o projeto, siga os passos descrito a seguir:
   3. Tire o `.exemple` do arquivo `.env.exemple`
 
   4. Instale as dependências:
+  * Você deve possuior o Node.js >= 20.6
   * `npm install`
 
   5. Suba o container do MySql:
