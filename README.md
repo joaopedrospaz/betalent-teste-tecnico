@@ -4,6 +4,7 @@ Para rodar o projeto, siga os passos descrito a seguir:
 
 <details>
 <summary><strong> 🔰 Iniciando o projeto</strong></summary><br />
+  * Você deve possuir o Node.js >= 20.6
   
   1. Clone o repositório `git clone git@github.com:joaopedrospaz/betalent-teste-tecnico.git`
   
@@ -13,7 +14,6 @@ Para rodar o projeto, siga os passos descrito a seguir:
   3. Tire o `.exemple` do arquivo `.env.exemple`
 
   4. Instale as dependências:
-  * Você deve possuir o Node.js >= 20.6
   * `npm install`
 
   5. Suba o container do MySql:
