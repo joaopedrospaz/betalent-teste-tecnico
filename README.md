@@ -4,7 +4,8 @@ Para rodar o projeto, siga os passos descrito a seguir:
 
 <details>
 <summary><strong> 🔰 Iniciando o projeto</strong></summary><br />
-  * Você deve possuir o Node.js >= 20.6
+ 
+ * Você deve possuir o Node.js >= 20.6
   
   1. Clone o repositório `git clone git@github.com:joaopedrospaz/betalent-teste-tecnico.git`
   
